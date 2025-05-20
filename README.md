@@ -32,12 +32,12 @@ export MCP_ENDPOINT=<your_mcp_endpoint>
 
 3. Run the calculator example | 运行计算器示例:
 ```bash
-python mcp_pipe.py calculator.py
+python mcp_pipe_common.py python calculator.py
 ```
 
 ## Project Structure | 项目结构
 
-- `mcp_pipe.py`: Main communication pipe that handles WebSocket connections and process management | 处理WebSocket连接和进程管理的主通信管道
+- `mcp_pipe_common.py`: Main communication pipe that handles WebSocket connections and process management | 处理WebSocket连接和进程管理的主通信管道
 - `calculator.py`: Example MCP tool implementation for mathematical calculations | 用于数学计算的MCP工具示例实现
 - `requirements.txt`: Project dependencies | 项目依赖
 
@@ -68,6 +68,20 @@ if __name__ == "__main__":
 - Remote device control | 远程设备控制
 - Data processing | 数据处理
 - Custom tool integration | 自定义工具集成
+
+## Use Cases | HA控制家居
+- 环境变量：
+```bash
+export HA_MCP_ENDPOINT=<你的小智MCP接入点>
+export API_ACCESS_TOKEN=<你的HA长时效API令牌>
+```
+- 直接执行以下命令:
+```bash
+python mcp_pipe_ha.py mcp-proxy {HA地址}/mcp_server/sse
+```
+## Use Cases | TODO
+-
+-
 
 ## Requirements | 环境要求
 
