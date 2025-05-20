@@ -72,12 +72,12 @@ if __name__ == "__main__":
 ## Use Cases | HA控制家居
 - 环境变量：
 ```bash
-export HA_MCP_ENDPOINT=<你的小智MCP接入点>
+export XIAOZHI_MCP_ENDPOINT=<你的小智MCP接入点>
 export API_ACCESS_TOKEN=<你的HA长时效API令牌>
 ```
 - 直接执行以下命令:
 ```bash
-python mcp_pipe_ha.py mcp-proxy {HA地址}/mcp_server/sse
+python mcp_pipe_ha.py mcp-proxy {HA MCP接入地址}/mcp_server/sse
 ```
 ## Use Cases | TODO
 -
