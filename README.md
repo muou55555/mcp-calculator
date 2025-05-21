@@ -77,7 +77,7 @@ export API_ACCESS_TOKEN=<你的HA长时效API令牌>
 ```
 - 直接执行以下命令:
 ```bash
-python mcp_pipe_ha.py mcp-proxy {HA MCP接入地址}/mcp_server/sse
+python mcp_pipe_common.py mcp-proxy {HA MCP接入地址}/mcp_server/sse
 ```
 ## Use Cases | TODO
 -
